@@ -27,6 +27,8 @@ public abstract class AbstractSerializer<T> {
 
     private Schema createSchema(String schemaPath) throws SAXException {
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+        schemaFactory.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
         return schemaFactory.newSchema(new StreamSource(getClass().getResourceAsStream(schemaPath)));
     }
 
