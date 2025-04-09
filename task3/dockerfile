@@ -1,0 +1,8 @@
+FROM bellsoft/liberica-openjdk-alpine:21
+RUN mkdir -p /opt/input /opt/output
+ENV APP_MODE=SINGLE
+VOLUME /opt/input
+VOLUME /opt/output
+WORKDIR /opt
+COPY ./target/*.jar app.jar
+ENTRYPOINT ["sh", "-c", "java -jar app.jar \"${APP_MODE}\" /opt/input  /opt/output"]
