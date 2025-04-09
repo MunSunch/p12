@@ -22,7 +22,7 @@ public class TestUtils {
     }
 
     public static String getTestCreditWithAnnuietyType_toXML_var1() {
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><credit type=\"ANNUIETY\"><amount>25000.0</amount><rate>12.4</rate><term>12</term><start_date>2025-04-06</start_date></credit>";
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><credit type=\"ANNUIETY\"><amount>25000.0</amount><rate>12.4</rate><term>12</term><start_date>2025-05-06</start_date></credit>";
     }
 
     public static Credit getTestCreditWithDifferentType_var1() throws DatatypeConfigurationException {
@@ -190,7 +190,107 @@ public class TestUtils {
     }
 
     public static String getTestPaymentScheduleXML_var1() {
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><PaymentSchedule><payments><payment><numberPayment>1</numberPayment><paymentDate>2025-05-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>258.33</interestPayment><debtPayment>1967.57</debtPayment><remainingDebt>23032.43</remainingDebt></payment><payment><numberPayment>2</numberPayment><paymentDate>2025-06-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>238.00</interestPayment><debtPayment>1987.90</debtPayment><remainingDebt>21044.53</remainingDebt></payment><payment><numberPayment>3</numberPayment><paymentDate>2025-07-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>217.46</interestPayment><debtPayment>2008.44</debtPayment><remainingDebt>19036.09</remainingDebt></payment><payment><numberPayment>4</numberPayment><paymentDate>2025-08-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>196.71</interestPayment><debtPayment>2029.19</debtPayment><remainingDebt>17006.90</remainingDebt></payment><payment><numberPayment>5</numberPayment><paymentDate>2025-09-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>175.74</interestPayment><debtPayment>2050.16</debtPayment><remainingDebt>14956.74</remainingDebt></payment><payment><numberPayment>6</numberPayment><paymentDate>2025-10-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>154.55</interestPayment><debtPayment>2071.35</debtPayment><remainingDebt>12885.39</remainingDebt></payment><payment><numberPayment>7</numberPayment><paymentDate>2025-11-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>133.15</interestPayment><debtPayment>2092.75</debtPayment><remainingDebt>10792.64</remainingDebt></payment><payment><numberPayment>8</numberPayment><paymentDate>2025-12-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>111.52</interestPayment><debtPayment>2114.38</debtPayment><remainingDebt>8678.26</remainingDebt></payment><payment><numberPayment>9</numberPayment><paymentDate>2026-01-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>89.68</interestPayment><debtPayment>2136.23</debtPayment><remainingDebt>6542.04</remainingDebt></payment><payment><numberPayment>10</numberPayment><paymentDate>2026-02-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>67.60</interestPayment><debtPayment>2158.30</debtPayment><remainingDebt>4383.74</remainingDebt></payment><payment><numberPayment>11</numberPayment><paymentDate>2026-03-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>45.30</interestPayment><debtPayment>2180.60</debtPayment><remainingDebt>2203.13</remainingDebt></payment><payment><numberPayment>12</numberPayment><paymentDate>2026-04-06</paymentDate><totalPayment>2225.90</totalPayment><interestPayment>22.77</interestPayment><debtPayment>2203.13</debtPayment><remainingDebt>0.00</remainingDebt></payment></payments></PaymentSchedule>";
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" +
+                "<PaymentSchedule>\n" +
+                "    <payments>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>1</numberPayment>\n" +
+                "            <paymentDate>2025-05-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>258.33</interestPayment>\n" +
+                "            <debtPayment>1967.57</debtPayment>\n" +
+                "            <remainingDebt>23032.43</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>2</numberPayment>\n" +
+                "            <paymentDate>2025-06-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>238.00</interestPayment>\n" +
+                "            <debtPayment>1987.90</debtPayment>\n" +
+                "            <remainingDebt>21044.53</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>3</numberPayment>\n" +
+                "            <paymentDate>2025-07-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>217.46</interestPayment>\n" +
+                "            <debtPayment>2008.44</debtPayment>\n" +
+                "            <remainingDebt>19036.09</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>4</numberPayment>\n" +
+                "            <paymentDate>2025-08-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>196.71</interestPayment>\n" +
+                "            <debtPayment>2029.19</debtPayment>\n" +
+                "            <remainingDebt>17006.90</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>5</numberPayment>\n" +
+                "            <paymentDate>2025-09-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>175.74</interestPayment>\n" +
+                "            <debtPayment>2050.16</debtPayment>\n" +
+                "            <remainingDebt>14956.74</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>6</numberPayment>\n" +
+                "            <paymentDate>2025-10-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>154.55</interestPayment>\n" +
+                "            <debtPayment>2071.35</debtPayment>\n" +
+                "            <remainingDebt>12885.39</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>7</numberPayment>\n" +
+                "            <paymentDate>2025-11-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>133.15</interestPayment>\n" +
+                "            <debtPayment>2092.75</debtPayment>\n" +
+                "            <remainingDebt>10792.64</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>8</numberPayment>\n" +
+                "            <paymentDate>2025-12-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>111.52</interestPayment>\n" +
+                "            <debtPayment>2114.38</debtPayment>\n" +
+                "            <remainingDebt>8678.26</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>9</numberPayment>\n" +
+                "            <paymentDate>2026-01-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>89.68</interestPayment>\n" +
+                "            <debtPayment>2136.23</debtPayment>\n" +
+                "            <remainingDebt>6542.04</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>10</numberPayment>\n" +
+                "            <paymentDate>2026-02-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>67.60</interestPayment>\n" +
+                "            <debtPayment>2158.30</debtPayment>\n" +
+                "            <remainingDebt>4383.74</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>11</numberPayment>\n" +
+                "            <paymentDate>2026-03-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>45.30</interestPayment>\n" +
+                "            <debtPayment>2180.60</debtPayment>\n" +
+                "            <remainingDebt>2203.13</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>12</numberPayment>\n" +
+                "            <paymentDate>2026-04-06</paymentDate>\n" +
+                "            <totalPayment>2225.90</totalPayment>\n" +
+                "            <interestPayment>22.77</interestPayment>\n" +
+                "            <debtPayment>2203.13</debtPayment>\n" +
+                "            <remainingDebt>0.00</remainingDebt>\n" +
+                "        </payment>\n" +
+                "    </payments>\n" +
+                "</PaymentSchedule>\n";
     }
 
     public static String getTestPaymentScheduleDifferentPaymentsXML_var1() {
@@ -198,6 +298,106 @@ public class TestUtils {
     }
 
     public static String getTestPaymentScheduleXML_var2() {
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><PaymentSchedule><payments><payment><numberPayment>1</numberPayment><paymentDate>2025-05-06</paymentDate><totalPayment>2230.95</totalPayment><interestPayment>147.62</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>22916.67</remainingDebt></payment><payment><numberPayment>2</numberPayment><paymentDate>2025-06-06</paymentDate><totalPayment>2191.93</totalPayment><interestPayment>108.60</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>20833.33</remainingDebt></payment><payment><numberPayment>3</numberPayment><paymentDate>2025-07-06</paymentDate><totalPayment>2166.22</totalPayment><interestPayment>82.89</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>18750.00</remainingDebt></payment><payment><numberPayment>4</numberPayment><paymentDate>2025-08-06</paymentDate><totalPayment>2147.32</totalPayment><interestPayment>63.99</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>16666.67</remainingDebt></payment><payment><numberPayment>5</numberPayment><paymentDate>2025-09-06</paymentDate><totalPayment>2133.13</totalPayment><interestPayment>49.80</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>14583.33</remainingDebt></payment><payment><numberPayment>6</numberPayment><paymentDate>2025-10-06</paymentDate><totalPayment>2122.22</totalPayment><interestPayment>38.89</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>12500.00</remainingDebt></payment><payment><numberPayment>7</numberPayment><paymentDate>2025-11-06</paymentDate><totalPayment>2113.33</totalPayment><interestPayment>30.00</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>10416.67</remainingDebt></payment><payment><numberPayment>8</numberPayment><paymentDate>2025-12-06</paymentDate><totalPayment>2106.13</totalPayment><interestPayment>22.79</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>8333.33</remainingDebt></payment><payment><numberPayment>9</numberPayment><paymentDate>2026-01-06</paymentDate><totalPayment>3116.67</totalPayment><interestPayment>1033.33</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>6250.00</remainingDebt></payment><payment><numberPayment>10</numberPayment><paymentDate>2026-02-06</paymentDate><totalPayment>2209.01</totalPayment><interestPayment>125.68</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>4166.67</remainingDebt></payment><payment><numberPayment>11</numberPayment><paymentDate>2026-03-06</paymentDate><totalPayment>2131.03</totalPayment><interestPayment>47.69</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>2083.33</remainingDebt></payment><payment><numberPayment>12</numberPayment><paymentDate>2026-04-06</paymentDate><totalPayment>2099.48</totalPayment><interestPayment>16.15</interestPayment><debtPayment>2083.33</debtPayment><remainingDebt>0.00</remainingDebt></payment></payments></PaymentSchedule>";
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" +
+                "<PaymentSchedule>\n" +
+                "    <payments>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>1</numberPayment>\n" +
+                "            <paymentDate>2025-05-06</paymentDate>\n" +
+                "            <totalPayment>2230.95</totalPayment>\n" +
+                "            <interestPayment>147.62</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>22916.67</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>2</numberPayment>\n" +
+                "            <paymentDate>2025-06-06</paymentDate>\n" +
+                "            <totalPayment>2191.93</totalPayment>\n" +
+                "            <interestPayment>108.60</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>20833.33</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>3</numberPayment>\n" +
+                "            <paymentDate>2025-07-06</paymentDate>\n" +
+                "            <totalPayment>2166.22</totalPayment>\n" +
+                "            <interestPayment>82.89</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>18750.00</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>4</numberPayment>\n" +
+                "            <paymentDate>2025-08-06</paymentDate>\n" +
+                "            <totalPayment>2147.32</totalPayment>\n" +
+                "            <interestPayment>63.99</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>16666.67</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>5</numberPayment>\n" +
+                "            <paymentDate>2025-09-06</paymentDate>\n" +
+                "            <totalPayment>2133.13</totalPayment>\n" +
+                "            <interestPayment>49.80</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>14583.33</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>6</numberPayment>\n" +
+                "            <paymentDate>2025-10-06</paymentDate>\n" +
+                "            <totalPayment>2122.22</totalPayment>\n" +
+                "            <interestPayment>38.89</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>12500.00</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>7</numberPayment>\n" +
+                "            <paymentDate>2025-11-06</paymentDate>\n" +
+                "            <totalPayment>2113.33</totalPayment>\n" +
+                "            <interestPayment>30.00</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>10416.67</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>8</numberPayment>\n" +
+                "            <paymentDate>2025-12-06</paymentDate>\n" +
+                "            <totalPayment>2106.13</totalPayment>\n" +
+                "            <interestPayment>22.79</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>8333.33</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>9</numberPayment>\n" +
+                "            <paymentDate>2026-01-06</paymentDate>\n" +
+                "            <totalPayment>3116.67</totalPayment>\n" +
+                "            <interestPayment>1033.33</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>6250.00</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>10</numberPayment>\n" +
+                "            <paymentDate>2026-02-06</paymentDate>\n" +
+                "            <totalPayment>2209.01</totalPayment>\n" +
+                "            <interestPayment>125.68</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>4166.67</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>11</numberPayment>\n" +
+                "            <paymentDate>2026-03-06</paymentDate>\n" +
+                "            <totalPayment>2131.03</totalPayment>\n" +
+                "            <interestPayment>47.69</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>2083.33</remainingDebt>\n" +
+                "        </payment>\n" +
+                "        <payment>\n" +
+                "            <numberPayment>12</numberPayment>\n" +
+                "            <paymentDate>2026-04-06</paymentDate>\n" +
+                "            <totalPayment>2099.48</totalPayment>\n" +
+                "            <interestPayment>16.15</interestPayment>\n" +
+                "            <debtPayment>2083.33</debtPayment>\n" +
+                "            <remainingDebt>0.00</remainingDebt>\n" +
+                "        </payment>\n" +
+                "    </payments>\n" +
+                "</PaymentSchedule>\n";
     }
 }
