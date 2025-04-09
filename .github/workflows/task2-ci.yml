@@ -1,0 +1,28 @@
+name: continue integration task2
+
+on:
+  pull_request:
+    branches:
+      - develop/task2
+
+env:
+  DIRECTORY: task2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up to JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'liberica'
+          java-version: '21'
+
+      - name: Analyze with SonarCloud
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=MunSunch_p12
+        working-directory: ${{ env.DIRECTORY }}

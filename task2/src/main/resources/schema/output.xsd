@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="PaymentSchedule">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="payments">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="payment"
+                                        type="PaymentScheduleElement"
+                                        maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="PaymentScheduleElement">
+        <xs:sequence>
+            <xs:element name="numberPayment" type="xs:int"/>
+            <xs:element name="paymentDate" type="xs:date"/>
+            <xs:element name="totalPayment" type="xs:decimal"/>
+            <xs:element name="interestPayment" type="xs:decimal"/>
+            <xs:element name="debtPayment" type="xs:decimal"/>
+            <xs:element name="remainingDebt" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
