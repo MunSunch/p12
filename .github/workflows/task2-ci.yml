@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - develop/task2
-  push:
-    branches:
-      - develop/task2
 
 env:
   DIRECTORY: task2
