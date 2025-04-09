@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class CreditSerializatorUnitTests {
-    private final Serializator<Credit> creditSerializator = new CreditSerializator();
+    private final AbstractSerializer<Credit> creditSerializator = new CreditSerializator();
 
     @DisplayName("Test serialize Credit with Annuiety Type to Bytes")
     @Test

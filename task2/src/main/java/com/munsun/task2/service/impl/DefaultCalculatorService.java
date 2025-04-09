@@ -2,7 +2,7 @@ package com.munsun.task2.service.impl;
 
 import com.munsun.task2.model.Credit;
 import com.munsun.task2.model.PaymentSchedule;
-import com.munsun.task2.serialize.Serializator;
+import com.munsun.task2.serialize.AbstractSerializer;
 import com.munsun.task2.serialize.impl.CreditSerializator;
 import com.munsun.task2.serialize.impl.PaymentScheduleSerializator;
 import com.munsun.task2.service.CalculatorService;
@@ -15,8 +15,8 @@ import java.io.InputStream;
 
 public class DefaultCalculatorService implements CalculatorService {
     private final CreditCalculator creditCalculator;
-    private final Serializator<Credit> creditSerializator;
-    private final Serializator<PaymentSchedule> paymentScheduleSerializator;
+    private final AbstractSerializer<Credit> creditSerializator;
+    private final AbstractSerializer<PaymentSchedule> paymentScheduleSerializator;
 
     public DefaultCalculatorService() {
         this.creditCalculator = new DefaultCreditCalculator();
@@ -24,7 +24,7 @@ public class DefaultCalculatorService implements CalculatorService {
         this.paymentScheduleSerializator = new PaymentScheduleSerializator();
     }
 
-    public DefaultCalculatorService(CreditCalculator creditCalculator, Serializator<Credit> creditSerializator, Serializator<PaymentSchedule> paymentScheduleSerializator) {
+    public DefaultCalculatorService(CreditCalculator creditCalculator, AbstractSerializer<Credit> creditSerializator, AbstractSerializer<PaymentSchedule> paymentScheduleSerializator) {
         this.creditCalculator = creditCalculator;
         this.creditSerializator = creditSerializator;
         this.paymentScheduleSerializator = paymentScheduleSerializator;

@@ -14,7 +14,7 @@ import java.io.InputStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PaymentScheduleSerializatorUnitTests {
-    private final Serializator<PaymentSchedule> paymentScheduleSerializator = new PaymentScheduleSerializator();
+    private final AbstractSerializer<PaymentSchedule> paymentScheduleSerializator = new PaymentScheduleSerializator();
 
     @DisplayName("Test serialize PaymentSchedule to Bytes")
     @Test
