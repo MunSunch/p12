@@ -10,6 +10,8 @@
 
 Хранением свойств для классов занимается ResourceProperties в пакете properties с файлом свойств в resources/application.properties.
 
+UPDATE: при работе в многопоточной программе пришлось добавить ThreadLocal переменные для выдачи своего маршаллера/демаршаллера каждому потоку.
+
 ## Источники
 
 1 Маршаллинг LocalDate: https://stackoverflow.com/questions/36156741/marshalling-localdate-using-jaxb
