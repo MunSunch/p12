@@ -1,15 +1,18 @@
 package com.munsun.task2.properties;
 
 import java.util.Properties;
+import java.util.logging.Logger;
 
 public class ResourceProperties {
+    private final static Logger LOGGER = Logger.getLogger(ResourceProperties.class.getName());
+
     private static final Properties properties = new Properties();
 
     static {
         try {
             properties.load(ResourceProperties.class.getResourceAsStream("/application.properties"));
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.info("Error while reading application.properties: " + e.getMessage());
         }
     }
 

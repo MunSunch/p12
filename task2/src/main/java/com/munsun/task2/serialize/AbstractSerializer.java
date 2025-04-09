@@ -61,7 +61,7 @@ public abstract class AbstractSerializer<T> {
         return unmarshaller.get();
     }
 
-    public void destroy() {
+    protected void destroy() {
         marshaller.remove();
         unmarshaller.remove();
     }
