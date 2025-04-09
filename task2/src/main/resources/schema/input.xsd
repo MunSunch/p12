@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:simpleType name="TypeCredit">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ANNUIETY"/>
+            <xs:enumeration value="DIFFERENT"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="credit">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="amount" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="rate" type="xs:decimal" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="term" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="start_date" type="xs:date" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="TypeCredit" use="required"/>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
